@@ -9,9 +9,9 @@ function ContactForm() {
     
     const [submit, setSubmit] = useState(false);
     
-    const nameValid = name.trim().length > 5;
+    const nameValid = name.length > 5;
     const emailValid = /\S+@\S+\.\S+/.test(email);
-    const msgValid = msg.trim().length > 30;
+    const msgValid = msg.length > 30;
     const rgpdValid = rgpd;
     
     const formSubmit = (e) => {
